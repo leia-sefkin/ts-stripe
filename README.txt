@@ -22,4 +22,6 @@ This plugin operates in two modes - test and live. To operate in test mode, chec
 
 You can also configure the description that will show up on customer's receipts here. If nothing is entered it will remain blank (and Stripe will automatically generate one for you).
 
-4. Place the shortcode [ts-stripe-payment-form] in your templates
+Additionally if you choose to do so, you can set a minimum amount for donations here.
+
+4. Place the shortcode [ts-stripe-payment-form] in your templates, and you're set!
