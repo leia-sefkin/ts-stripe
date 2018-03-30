@@ -25,7 +25,7 @@ class Shortcodes {
 	 */
 	public function register_shortcodes() {
 
-		add_shortcode( 'ts-stripe-payment_form', array( $this, 'payment_form_setup_page' ) );
+		add_shortcode( 'ts-stripe-payment-form', array( $this, 'payment_form_setup_page' ) );
 		do_action( 'ts-stripe_add_shortcodes' );
 	}
 
