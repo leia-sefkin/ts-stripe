@@ -130,9 +130,6 @@ class TS_Stripe {
 
 		$plugin_admin = new TS_Stripe_Admin( $this->get_plugin_name(), $this->get_version() );
 
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-
 		// Save/Update plugin options
 		$this->loader->add_action('admin_init', $plugin_admin, 'options_update');
 
