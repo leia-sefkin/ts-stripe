@@ -1,0 +1,30 @@
+/**
+ * Public facing css
+ */
+
+.ts_stripe_card {
+    color: #666;
+    background: #fff;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    border: 1px solid #bbb;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    padding: 0.7em;
+    width: 100%;
+}
+
+.flex {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.flex .currency {
+	padding: 4px 10px 0 20px;
+	line-height: 2.5;
+	position: absolute;
+}
+
+.flex input.amount {
+	padding-left: 35px;
+}
