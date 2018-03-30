@@ -54,6 +54,8 @@ jQuery(document).ready(function($) {
 	// Handle amount validation
 	$('#amount').blur(function() {
 		var amount = $('#amount').val();
+		var minimum = stripe_vars.minimum_amount;
+
 	  	// input type shouldn't allow for this, but just in case
 		amount = amount.replace(/\$/g, '').replace(/\,/g, '');
 		amount = parseFloat(amount);
@@ -62,9 +64,10 @@ jQuery(document).ready(function($) {
 	    	$('#amount_error').html('<p>Please enter a valid amount in USD ($).</p>');
 	  	} 
 
-	  	else if (amount < 5.00) {
-	    	$('#amount_error').html('<p>Donation amount must be at least $5.</p>');
-	  	} 
+	  	// if we have a minimum amount set and the amount entered is less than that
+	  	else if (minimum && amount < minimum) {
+	    	$('#amount_error').html('<p>Donation amount must be at least $' + minimum + '.</p>');
+	    }
 	  	
 	  	else {
 	  		$('#amount_error').html('');

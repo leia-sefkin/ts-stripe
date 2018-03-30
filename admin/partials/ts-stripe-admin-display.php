@@ -32,6 +32,7 @@
         $test_secret = $options['test_secret'];
         $test_publishable = $options['test_publishable'];
         $statement_descriptor = $options['statement_descriptor'];
+        $minimum_amount = $options['minimum_amount'];
     ?>
 
     <?php
@@ -92,6 +93,13 @@
 				<td>
 					<input id="<?php echo $this->plugin_name; ?>-statement_descriptor" name="<?php echo $this->plugin_name; ?>[statement_descriptor]" type="text" class="regular-text" maxlength="50" value="<?php if(!empty($statement_descriptor)) echo $statement_descriptor;?>"/><br>
 					<span class="description"><?php esc_attr_e( 'Enter the description as you would like it to appear on donor receipts.', 'WpAdminStyle' ); ?></span><br>
+				</td>
+			</tr>
+			<tr valign="top">	
+				<th scope="row"><?php esc_attr_e( 'Minimum Donation Amount', 'WpAdminStyle' ); ?></th>
+				<td>
+					<input id="<?php echo $this->plugin_name; ?>-statement_descriptor" name="<?php echo $this->plugin_name; ?>[minimum_amount]" type="number" class="small-text" value="<?php if(!empty($minimum_amount)) echo $minimum_amount;?>"/><br>
+					<span class="description"><?php esc_attr_e( 'If you wish there to be one, enter in the minimum donation amount.', 'WpAdminStyle' ); ?></span><br>
 				</td>
 			</tr>
 		</table>
