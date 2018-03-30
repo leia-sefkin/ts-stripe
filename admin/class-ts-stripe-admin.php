@@ -134,4 +134,26 @@ class TS_Stripe_Admin {
 	    return $valid;
  	}
 
+
+
+	/**
+	 * Register the stylesheets for the public-facing side of the site.
+	 *
+	 * @since    1.0.0
+	 */
+	public function enqueue_styles() {
+
+	}
+	
+	/**
+	 * Register the JavaScript for the admin area.
+	 *
+	 * @since    1.0.0
+	 */
+	public function enqueue_scripts() {
+
+
+	}
+
+
 }
