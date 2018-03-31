@@ -79,7 +79,7 @@ class TS_Stripe_Public {
 				$secret_key = $this->ts_stripe_options['live_secret'];
 			}
 
-			// convert amont to cents
+			// convert amount to cents
 			if(isset($_POST['donation_amount'])) {
 				$amount = $_POST['donation_amount'] * 100;
 	 
@@ -141,10 +141,7 @@ class TS_Stripe_Public {
 			$publishable = $this->ts_stripe_options['live_publishable'];
 		}
 
-		//TODO handle case where publishable isn't set 
 		wp_enqueue_script('stripe-processing', 'https://js.stripe.com/v3/');
-
-
 		wp_localize_script('stripe-processing', 'stripe_vars', array('publishable_key' => $publishable,
 			'minimum_amount' => $this->ts_stripe_options['minimum_amount']
 		));
