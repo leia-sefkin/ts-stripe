@@ -20,3 +20,10 @@ $options = get_option( 'ts-stripe' );
 if ($options) {
 	delete_option('ts-stripe');
 }
+
+//remove database tables
+global $wpdb;
+$table_name = $wpdb->prefix . 'ts_stripe';
+$sql = "DROP TABLE IF EXISTS $table_name;";
+$wpdb->query($sql);
+
