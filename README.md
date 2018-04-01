@@ -48,4 +48,4 @@ On uninstall all data will be removed - including this table. If you wish to pre
 
 Screenshots
 ======
-![TS Stripe Preview](https://raw.githubusercontent.com/leia-sefkin/ts-stripe/master/assets/ts-stripe-preview.png | width=600)
+<img src="https://raw.githubusercontent.com/leia-sefkin/ts-stripe/master/assets/ts-stripe-preview.png" width="600px">
