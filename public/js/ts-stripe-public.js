@@ -27,7 +27,7 @@ function stripeTokenHandler(token) {
   var hiddenInput = document.createElement('input');
   hiddenInput.setAttribute('type', 'hidden');
   hiddenInput.setAttribute('name', 'stripe_token');
-  hiddenInput.setAttribute('value', token.id);
+  hiddenInput.setAttribute('value', token);
 
   form.appendChild(hiddenInput);
   // Submit the form
@@ -93,7 +93,7 @@ jQuery(document).ready(function($) {
 	form.addEventListener('submit', function(event) {
 	  	event.preventDefault();
 
-		stripe.createToken(card).then(function(result) {
+		stripe.createToken(card, {name: name}).then(function(result) {
 			if (result.error) {
 		  		// Inform the customer that there was an error.
 		  		var errorElement = document.getElementById('card_errors');
