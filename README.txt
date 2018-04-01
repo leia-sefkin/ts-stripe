@@ -20,8 +20,11 @@ In order for this plugin to work properly, you must have Stripe account setup. T
 
 This plugin operates in two modes - test and live. To operate in test mode, check the "Test Mode" box on the settings page and enter in your test API Keys (found on the Stripe Dashboard).
 
-You can also configure the description that will show up on customer's receipts here. If nothing is entered it will remain blank (and Stripe will automatically generate one for you).
+Stripe Offers a variety of test cards and codes to test transaction success and failures. If you wish to try these for yourself you can find those card numbers in the Stripe documentation here: https://stripe.com/docs/testing
+
+You can also configure the description that will show up on customer's receipts here. If nothing is entered it will remain blank.
 
 Additionally if you choose to do so, you can set a minimum amount for donations here.
 
 4. Place the shortcode [ts-stripe-payment-form] in your templates, and you're set!
+
