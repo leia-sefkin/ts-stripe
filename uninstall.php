@@ -3,7 +3,7 @@
 /**
  * Fired when the plugin is uninstalled.
  *
- * @link       https://github.com/leia-sefkin
+ * @link       https://github.com/leia-sefkin/ts-stripe
  * @since      1.0.0
  *
  * @package    TS_Stripe

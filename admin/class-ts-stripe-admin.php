@@ -1,21 +1,11 @@
 <?php
-
-/**
- * The admin-specific functionality of the plugin.
- *
- * @link       https://github.com/leia-sefkin
- * @since      1.0.0
- *
- * @package    TS_Stripe
- * @subpackage TS_Stripe/admin
- */
-
 /**
  * The admin-specific functionality of the plugin.
  *
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
+ * @since      1.0.0
  * @package    TS_Stripe
  * @subpackage TS_Stripe/admin
  * @author     Leia Sefkin <leia.sefkin@gmail.com>

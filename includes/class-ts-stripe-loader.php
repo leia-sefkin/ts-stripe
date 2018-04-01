@@ -1,15 +1,4 @@
 <?php
-
-/**
- * Register all actions and filters for the plugin
- *
- * @link       https://github.com/leia-sefkin
- * @since      1.0.0
- *
- * @package    TS_Stripe
- * @subpackage TS_Stripe/includes
- */
-
 /**
  * Register all actions and filters for the plugin.
  *
@@ -17,6 +6,7 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
+ * @since      1.0.0
  * @package    TS_Stripe
  * @subpackage TS_Stripe/includes
  * @author     Leia Sefkin <leia.sefkin@gmail.com>

@@ -3,18 +3,6 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       https://github.com/leia-sefkin
- * @since      1.0.0
- *
- * @package    TS_Stripe
- * @subpackage TS_Stripe/includes
- */
-
-/**
- * Fired during plugin deactivation.
- *
- * This class defines all code necessary to run during the plugin's deactivation.
- *
  * @since      1.0.0
  * @package    TS_Stripe
  * @subpackage TS_Stripe/includes
@@ -23,9 +11,7 @@
 class TS_Stripe_Deactivator {
 
 	/**
-	 * Short Description. (use period)
-	 *
-	 * Long Description.
+	 * Basic Deactivator
 	 *
 	 * @since    1.0.0
 	 */

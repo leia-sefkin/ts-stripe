@@ -8,7 +8,7 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://github.com/leia-sefkin
+ * @link              https://github.com/leia-sefkin/ts-stripe
  * @since             1.0.0
  * @package           TS_Stripe
  *
@@ -22,7 +22,6 @@
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       ts-stripe
- * Domain Path:       /languages
  */
 
 // If this file is called directly, abort.

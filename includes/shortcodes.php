@@ -4,6 +4,11 @@
  * Core Shortcodes Class
  *
  * Register and handle custom shortcodes.
+ *
+ * @since      1.0.0
+ * @package    TS_Stripe
+ * @subpackage TS_Stripe/includes
+ * @author     Leia Sefkin <leia.sefkin@gmail.com>
  */
 class Shortcodes {
 

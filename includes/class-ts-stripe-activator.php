@@ -1,15 +1,4 @@
 <?php
-
-/**
- * Fired during plugin activation
- *
- * @link       https://github.com/leia-sefkin
- * @since      1.0.0
- *
- * @package    TS_Stripe
- * @subpackage TS_Stripe/includes
- */
-
 /**
  * Fired during plugin activation.
  *
@@ -62,9 +51,7 @@ class TS_Stripe_Activator {
 
 		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 		dbDelta( $sql );
-		// TODO: remove this 
-		echo $wpdb->last_error;
-
+		
 		add_option( 'ts_stripe_db_version', $ts_stripe_db_version );
 
 	}

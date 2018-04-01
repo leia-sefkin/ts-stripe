@@ -4,9 +4,7 @@
  *
  * This file is used to markup the public-facing aspects of the plugin.
  *
- * @link       https://github.com/leia-sefkin
- * @since      1.0.0
- *
+ * @since      1.0.0 
  * @package    TS_Stripe
  * @subpackage TS_Stripe/public/partials
  */

@@ -3,16 +3,7 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://github.com/leia-sefkin
- * @since      1.0.0
- *
- * @package    TS_Stripe
- * @subpackage TS_Stripe/public
- */
-
-/**
- * The public-facing functionality of the plugin.
- *
+ * @since      1.0.0 *
  * @package    TS_Stripe
  * @subpackage TS_Stripe/public
  * @author     Leia Sefkin <leia.sefkin@gmail.com>
@@ -50,7 +41,6 @@ class TS_Stripe_Public {
 		$this->version = $version;
 		$this->ts_stripe_options = get_option($this->plugin_name);
 
-		//TODO - shortcodes or another method to load? doesn't quite flow with rest of structure
 		/**
 		 * So we can use shortcodes to add forms
 		 */

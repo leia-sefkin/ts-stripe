@@ -5,11 +5,10 @@
  *
  * This file is used to markup the admin-facing aspects of the plugin.
  *
- * @link       https://github.com/leia-sefkin
  * @since      1.0.0
- *
  * @package    TS_Stripe
  * @subpackage TS_Stripe/admin/partials
+ * @author     Leia Sefkin <leia.sefkin@gmail.com>
  */
 ?>
 
