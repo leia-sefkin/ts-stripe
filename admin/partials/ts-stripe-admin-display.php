@@ -53,32 +53,32 @@
 
 		<table class="form-table">
 			<tr valign="top">	
-				<th scope="row"><?php esc_attr_e( 'Test Secret', 'WpAdminStyle' ); ?></th>
-				<td>
-					<input id="<?php echo $this->plugin_name; ?>-test_secret" name="<?php echo $this->plugin_name; ?>[test_secret]" type="text" class="regular-text" maxlength="50" value="<?php if(!empty($test_secret)) echo $test_secret;?>"/><br>
-					<span class="description"><?php esc_attr_e( 'Paste your test secret key here.', 'WpAdminStyle' ); ?></span><br>
-				</td>
-			</tr>
-			<tr valign="top">	
 				<th scope="row"><?php esc_attr_e( 'Test Publishable', 'WpAdminStyle' ); ?></th>
 				<td>
 					<input id="<?php echo $this->plugin_name; ?>-test_publishable" name="<?php echo $this->plugin_name; ?>[test_publishable]" type="text" class="regular-text" maxlength="50" value="<?php if(!empty($test_publishable)) echo $test_publishable;?>"/><br>
 					<span class="description"><?php esc_attr_e( 'Paste your test publishable key here.', 'WpAdminStyle' ); ?></span><br>
 				</td>
 			</tr>
-
 			<tr valign="top">	
-				<th scope="row"><?php esc_attr_e( 'Live Secret', 'WpAdminStyle' ); ?></th>
+				<th scope="row"><?php esc_attr_e( 'Test Secret', 'WpAdminStyle' ); ?></th>
 				<td>
-					<input id="<?php echo $this->plugin_name; ?>-live_secret" name="<?php echo $this->plugin_name; ?>[live_secret]" type="text" class="regular-text" maxlength="50" value="<?php if(!empty($live_secret)) echo $live_secret;?>"/><br>
-					<span class="description"><?php esc_attr_e( 'Paste your live secret key here.', 'WpAdminStyle' ); ?></span><br>
+					<input id="<?php echo $this->plugin_name; ?>-test_secret" name="<?php echo $this->plugin_name; ?>[test_secret]" type="text" class="regular-text" maxlength="50" value="<?php if(!empty($test_secret)) echo $test_secret;?>"/><br>
+					<span class="description"><?php esc_attr_e( 'Paste your test secret key here.', 'WpAdminStyle' ); ?></span><br>
 				</td>
 			</tr>
+
 			<tr valign="top">	
 				<th scope="row"><?php esc_attr_e( 'Live Publishable', 'WpAdminStyle' ); ?></th>
 				<td>
 					<input id="<?php echo $this->plugin_name; ?>-live_publishable" name="<?php echo $this->plugin_name; ?>[live_publishable]" type="text" class="regular-text" maxlength="50" value="<?php if(!empty($live_publishable)) echo $live_publishable;?>"/><br>
 					<span class="description"><?php esc_attr_e( 'Paste your live publishable key here.', 'WpAdminStyle' ); ?></span><br>
+				</td>
+			</tr>
+			<tr valign="top">	
+				<th scope="row"><?php esc_attr_e( 'Live Secret', 'WpAdminStyle' ); ?></th>
+				<td>
+					<input id="<?php echo $this->plugin_name; ?>-live_secret" name="<?php echo $this->plugin_name; ?>[live_secret]" type="text" class="regular-text" maxlength="50" value="<?php if(!empty($live_secret)) echo $live_secret;?>"/><br>
+					<span class="description"><?php esc_attr_e( 'Paste your live secret key here.', 'WpAdminStyle' ); ?></span><br>
 				</td>
 			</tr>
 		</table>

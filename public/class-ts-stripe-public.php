@@ -104,6 +104,7 @@ class TS_Stripe_Public {
 
 				// for database record 
 				$success = 1;
+				$message = 'successful payment';
 				// redirect on successful payment
 				$redirect = add_query_arg('payment', 'paid', $_POST['redirect']);
 	 
@@ -140,7 +141,6 @@ class TS_Stripe_Public {
 	public function ts_stripe_save_data($data) {
 		// save donor name, card last4, donation amount, donor email
 		// whether payment was successful or not
-
 		global $wpdb;
 
 		if ( empty( $data ) ) {
