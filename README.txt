@@ -30,6 +30,4 @@ Additionally if you choose to do so, you can set a minimum amount for donations 
 
 == Screenshots ==
 
-![alt text][preview]
-
-[preview]: https://github.com/leia-sefkin/ts-stripe/raw/master/assets/ts-stripe-preview.png "TS Stripe Plugin Preview"
+![TS Stripe Preview](https://github.com/leia-sefkin/ts-stripe/raw/master/assets/ts-stripe-preview.png)
