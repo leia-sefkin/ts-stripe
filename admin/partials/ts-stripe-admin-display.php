@@ -89,8 +89,8 @@
 			<tr valign="top">	
 				<th scope="row"><?php esc_attr_e( 'Description for Donor Receipts', 'WpAdminStyle' ); ?></th>
 				<td>
-					<input id="<?php echo $this->plugin_name; ?>-statement_descriptor" name="<?php echo $this->plugin_name; ?>[statement_descriptor]" type="text" class="regular-text" maxlength="50" value="<?php if(!empty($statement_descriptor)) echo $statement_descriptor;?>"/><br>
-					<span class="description"><?php esc_attr_e( 'Enter the description as you would like it to appear on donor receipts.', 'WpAdminStyle' ); ?></span><br>
+					<input id="<?php echo $this->plugin_name; ?>-statement_descriptor" name="<?php echo $this->plugin_name; ?>[statement_descriptor]" type="text" class="regular-text" maxlength="22" value="<?php if(!empty($statement_descriptor)) echo $statement_descriptor;?>"/><br>
+					<span class="description"><?php esc_attr_e( 'Enter the description as you would like it to appear on donor receipts. (Max length 22 characters.)', 'WpAdminStyle' ); ?></span><br>
 				</td>
 			</tr>
 			<tr valign="top">	

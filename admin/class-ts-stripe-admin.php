@@ -124,12 +124,13 @@ class TS_Stripe_Admin {
 
 	    $valid['test_mode'] = (isset($input['test_mode']) && !empty($input['test_mode'])) ? 1 : 0;
 
-	    //limiting length of inputs here manually in addition to front end
+	    // limiting length of inputs here manually in addition to front end
 	    $valid['live_secret'] = $this->limit_input_length($input['live_secret'], 50);
 	    $valid['live_publishable']= $this->limit_input_length($input['live_publishable'], 50);
 	    $valid['test_secret'] = $this->limit_input_length($input['test_secret'], 50);
 	    $valid['test_publishable'] = $this->limit_input_length($input['test_publishable'], 50);
-	    $valid['statement_descriptor'] = $this->limit_input_length($input['statement_descriptor'], 50);
+	    // statement descriptor can only be 22 chars max
+	    $valid['statement_descriptor'] = $this->limit_input_length($input['statement_descriptor'], 22);
 	   	$valid['minimum_amount'] = $this->limit_input_length($input['minimum_amount'], 10);
 
 	    return $valid;
