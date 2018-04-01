@@ -80,7 +80,8 @@ class TS_Stripe_Public {
 			$charge = array(
 				'amount' => $amount,
 				'currency' => 'usd',
-				'card' => $token
+				'card' => $token,
+				'description' => $email
 			);
 
 			$options = $this->ts_stripe_options;
@@ -96,28 +97,34 @@ class TS_Stripe_Public {
 				$secret_key = $options['live_secret'];
 			}
 
-	 
 			// attempt to charge the customer's card
 			try {
 				\Stripe\Stripe::setApiKey($secret_key);
 				\Stripe\Charge::create($charge);
 
-
-				//save record in the database
-				self::ts_stripe_save_data(array(
-					'name' => $name,
-					'last4' => $last4,
-					'amount' => $amount,
-					'email' => $email
-				));
-	 
+				// for database record 
+				$success = 1;
 				// redirect on successful payment
 				$redirect = add_query_arg('payment', 'paid', $_POST['redirect']);
 	 
 			} catch (Exception $e) {
-				// redirect on failed payment
-				$redirect = add_query_arg('payment', 'failed', $_POST['redirect']);
-			}
+				// save error details for database record
+    			$success = 0;
+    			$message = $e->getMessage();
+
+    			// redirect on failed payment
+    			$redirect = add_query_arg('payment', 'failed', $_POST['redirect']);
+    		}
+
+    		//save record in the database 
+    		self::ts_stripe_save_data(array(
+				'name' => $name,
+				'last4' => $last4,
+				'amount' => $amount,
+				'email' => $email,
+				'success' => $success,
+				'message' => $message
+			));
 	 
 			// redirect back to our previous page with the added query variable
 			wp_redirect($redirect); 

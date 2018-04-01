@@ -55,6 +55,8 @@ class TS_Stripe_Activator {
 		  email varchar(255) DEFAULT '' NOT NULL,
 		  last4 int(5) NOT NULL,
 		  amount int(10) NOT NULL,
+		  success tinyint(1) NOT NULL,
+		  message varchar(255) DEFAULT '',
 		  PRIMARY KEY  (id)
 		) $charset_collate;";
 
