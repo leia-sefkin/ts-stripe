@@ -17,7 +17,7 @@ Stripe plugin integration for WordPress
 Installation
 ======
 
-In order for this plugin to work properly, you must have a [Stripe account setup](https://dashboard.stripe.com/register).
+**In order for this plugin to work properly, you must have a [Stripe account](https://dashboard.stripe.com/register) setup first.**
 
 1. Upload `ts-stripe` to the `/wp-content/plugins/` directory
 
@@ -25,13 +25,14 @@ In order for this plugin to work properly, you must have a [Stripe account setup
 
 3. Go to the Stripe settings menu via the WordPress admin dashboard and enter in your API Keys.
 
-   This plugin operates in two modes - test and live. To operate in test mode, check the "Test Mode" box on the settings page and enter in your test API Keys (found on the Stripe Dashboard).Stripe Offers a variety of test cards and codes to test transaction success and failures. If you wish to try these for yourself you can find those card numbers in the [Stripe documentation](https://stripe.com/docs/testing). 
+   This plugin operates in two modes - test and live. To operate in test mode, check the "Test Mode" box on the settings page and enter in your test API Keys (found on the Stripe Dashboard). Stripe Offers a variety of test cards and codes to test transaction success and failures. If you wish to try these for yourself you can find those card numbers in the [Stripe documentation](https://stripe.com/docs/testing).  
+   
+   In this menu you can also configure the following:
+   
+   * Satement Description - the description of the transaction as it shows up on customer's receipts. If nothing is entered it will remain blank.
+   * Minimum Amount - the minimum transaction amount. 
 
-   You can also configure the description that will show up on donor's receipts. If nothing is entered it will remain blank.
-
-   Additionally if you choose to do so, you can set a minimum amount for donations here.
-
-4. Place the shortcode [ts-stripe-payment-form] in your post or page, and you're all set!
+4. Place the shortcode `[ts-stripe-payment-form]` in your post or page, and you're all set!
 
 Other Notes
 ======
