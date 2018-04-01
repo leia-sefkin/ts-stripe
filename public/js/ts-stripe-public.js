@@ -24,12 +24,18 @@ var style = {
 function stripeTokenHandler(token) {
   // Insert the token ID into the form so it gets submitted to the server
   var form = document.getElementById('stripe_payment_form');
-  var hiddenInput = document.createElement('input');
-  hiddenInput.setAttribute('type', 'hidden');
-  hiddenInput.setAttribute('name', 'stripe_token');
-  hiddenInput.setAttribute('value', token);
+  var tokenInput = document.createElement('input');
+  tokenInput.setAttribute('type', 'hidden');
+  tokenInput.setAttribute('name', 'stripe_token');
+  tokenInput.setAttribute('value', token.id);
 
-  form.appendChild(hiddenInput);
+  var cardInput = document.createElement('input');
+  cardInput.setAttribute('type', 'hidden');
+  cardInput.setAttribute('name', 'stripe_card_last4');
+  cardInput.setAttribute('value', token.card.last4);
+
+  form.appendChild(tokenInput);
+  form.appendChild(cardInput);
   // Submit the form
   form.submit();
 }
