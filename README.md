@@ -2,8 +2,6 @@ TS Stripe
 ======
 Contributors: Leia Sefkin
 
-Donate link: https://github.com/leia-sefkin
-
 Requires at least: 1.0
 
 Tested up to: 1.0
@@ -12,7 +10,7 @@ License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Stripe plugin integration for WordPress
+Stripe WordPress plugin
 
 Installation
 ======
