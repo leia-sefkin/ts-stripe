@@ -28,3 +28,8 @@ Additionally if you choose to do so, you can set a minimum amount for donations 
 
 4. Place the shortcode [ts-stripe-payment-form] in your templates, and you're set!
 
+== Screenshots ==
+
+![alt text][preview]
+
+[preview]: https://github.com/leia-sefkin/ts-stripe/blob/master/assets/ts-stripe-preview.png "TS Stripe Plugin Preview"
