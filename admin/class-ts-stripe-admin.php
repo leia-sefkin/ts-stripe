@@ -93,7 +93,8 @@ class TS_Stripe_Admin {
  	/**
  	 * Limit input length
  	 * 
- 	 * @since    1.0.0
+ 	 * @since     1.0.0
+ 	 * @return    string    $input    Input limited to length provided
 	 */
  	private function limit_input_length($input, $limit) {
  		if ( strlen ($input) > $limit) {
@@ -107,6 +108,7 @@ class TS_Stripe_Admin {
 	 * Validate inputs on settings page
 	 *
 	 * @since    1.0.0
+	 * @return   array    $valid    Array of inputs validated and sanitized
 	 */
 	public function validate($input) {
 	    // All inputs        

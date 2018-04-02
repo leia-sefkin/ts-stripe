@@ -45,6 +45,22 @@ This plugin creates a new table named wp_ts_stripe in the WordPress database, wh
 
 On uninstall all data will be removed - including this table. If you wish to preserve this data please make a copy before uninstalling. 
 
+
+### General Repository Structure
+
+`/admin` - All code related to managing the WordPress admin page for this plugin. Here is where you will find the code for rendering the page which allows for the setting API keys and other configurations.
+
+`/assets` - Assets for this repository
+
+`/includes` - General classes used throughout the plugin. Including the main ts-stripe class, the activator/deactivator, loader and shortcodes.
+
+`/public` - All code related to the public facing portions of this plugin. Here is where you will find the code for processing payments, and for rendering the checkout page. 
+
+`/vendor` - All vendor related code. This is where the Stripe php libraries live. 
+
 Screenshots
 ======
 <img src="https://raw.githubusercontent.com/leia-sefkin/ts-stripe/master/assets/ts-stripe-preview.png" width="600px">
+
+
+
